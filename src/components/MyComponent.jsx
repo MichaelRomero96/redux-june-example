@@ -4,17 +4,17 @@ import { getCommentsAction } from '../redux/action/apiAction';
 import { loginAction, logoutAction } from '../redux/action/mainAction';
 
 export default function MyComponent() {
-    const { user } = useSelector(state => state.main);
-    const { comments } = useSelector(state => state.api);
-    const dispatch = useDispatch();
-    console.log(comments);
-    useEffect(() => {
-        dispatch(getCommentsAction())
-    }, []);
+    // const { user } = useSelector(state => state.main);
+    // const { comments } = useSelector(state => state.api);
+    // const dispatch = useDispatch();
+    // console.log(comments);
+    // useEffect(() => {
+    //     dispatch(getCommentsAction())
+    // }, []);
     return (
         <>
-            <h1>User: {user.name}</h1>
-            <button
+            <h1>User: {/* {user.name} */}</h1>
+            {/* <button
                 onClick={() => dispatch(logoutAction())}
             >
                 Logout
@@ -38,7 +38,7 @@ export default function MyComponent() {
                     </div>
                 </div>
             ))
-            }
+            }; */}
 
         </>
     )
